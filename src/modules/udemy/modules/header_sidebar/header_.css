@@ -1,0 +1,181 @@
+.progress_box1,.share_box2,.menubox_2{
+    position: absolute;
+    background-color: white;
+    color:black;
+    box-shadow: 0 0 0 1px #d1d7dc, 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);;
+    font-family: var(--font-stack-text);
+}
+.progress_box1{
+    width:20rem;
+    top:4rem;
+    right:1rem;
+    padding:1rem;
+    z-index: 100;
+    cursor:pointer
+}
+
+.share_box2 svg,.menubox_2 svg,.progress_box1 svg{
+    color:black !important;
+    fill:black !important;
+}
+.menubox_2{
+    width:15rem;
+    top:3.2rem;
+    right:1%;
+    padding: 0.2rem;
+    z-index: 100;
+    cursor:pointer
+}
+.share_box2{
+    padding: 0.25rem;
+    width:15rem;
+    right:5%;
+    top:2.5rem;
+    z-index: 100;
+    cursor:pointer
+}
+
+.share_box2 button,.menubox_2 button{
+    outline: none;
+    border:none;
+    background: none;
+}
+.share_box2 li,.menubox_2 li{
+    list-style: none;
+    font-weight: normal;
+    padding: 0.5rem;
+}
+.menubox_2 ul li{
+    padding: 0.5rem 0.8rem;
+}
+.menubox_2 ul{
+    padding:0;
+    margin:0;
+}
+.menubox_2 ul li button:hover{
+    color:var(--violet);
+}
+.menubox_2 ul li button:hover>svg{
+    fill:var(--violet);
+}
+
+
+.share_box2 li button,.menubox_2 ul li button{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+.progress_box1::before{
+    position: absolute;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid black;
+    top:-1.2rem;
+   left:45%;
+}
+.progress_box1::after{
+    position: absolute;
+    content: "";
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 20px solid white;
+   top:-1.2rem;
+   left:45%;
+   
+}
+
+
+.rating_box_1{
+    position: absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background: rgba(28,29,31,.8);
+    /* opacity: 0.7; */
+    color:black;
+    z-index:100
+
+}
+.rating_box_2{
+    background: white;
+    width:70vw;
+    padding: 1rem;
+    z-index:200
+}
+
+.menu_containers{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_containers button{
+    border:none;
+    background: none;
+    color:black;
+    outline: none;
+}
+.menu_containers button:nth-child(1){
+    color:var(--violet)
+}
+.ratingmodel{
+flex-direction: column;
+gap:1rem
+}
+
+.rating_test_1{
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+.rating_test_2{
+    font-size: 1rem;
+}
+.star_box{
+    padding: 1rem;
+    gap:1rem;
+    font-weight: 700;
+    cursor: pointer;
+    width: fit-content;
+    margin:auto
+}
+.header .star_box svg{
+    /* fill:#e59819; */
+    stroke:#e59819;
+    color:#e59819;
+    height: 54px;
+    width:60px;
+    stroke-width: 3px;
+
+}
+
+.header .star_box[data-commentbox=true] svg{
+    height: 20px;
+    width:20px;
+    
+}
+
+.star_textarea{
+    width:100%;
+    height:25vh;
+
+}
+.star_comment_button{
+    background: #1c1d1f;
+    color:white;
+    border:none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem;
+    opacity: 1 !important;
+    margin-left: auto;
+    display:block;
+    margin-top:1rem
+    
+}

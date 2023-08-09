@@ -1,0 +1,151 @@
+:root {
+    --font-stack-heading-serif: SuisseWorks,Georgia,Times,'Times New Roman',serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    --font-stack-heading: 'Udemy Sans',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    --font-stack-text: 'Udemy Sans','SF Pro Text',-apple-system,BlinkMacSystemFont,Roboto,'Segoe UI',Helvetica,Arial,sans-serif,'Apple Color Emoji','Segoe UI Emoji','Segoe UI Symbol';
+    --header-color:#1c1d1f;
+    --goal-color:#6a6f73;
+    --violet:#5624d0
+
+
+}
+
+.ud-text-md {
+    font-family: var(--font-stack-text);
+    font-weight: 400;
+    line-height: 1.4;
+    font-size: 0.9rem;
+}
+
+.ud-heading-sm {
+    font-family: var(--font-stack-heading);
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: -.02rem;
+    font-size: 0.9rem;
+}
+
+.header{
+    background-color: var(--header-color);
+    padding:0.5rem 0.5rem;
+}
+.header a{
+    text-decoration: none;
+    color:white;
+}
+.header svg:not(.double_circle){
+    color:white;
+    fill:white;
+    height:20px;
+    width:20px
+}
+.header .star svg{
+    fill:var(--goal-color);
+    height:25px;
+    width:25px
+}
+.header .share_box_1 svg{
+    height:15px;
+    width:15px;
+}
+.flex_ai_jc{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex_1{
+    flex:1
+}
+
+.gap_1{
+    gap:1rem
+}
+.gap_0_5{
+    gap:0.5rem
+}
+.staright_line{
+    border:1px solid var(--goal-color);
+    height:2rem;
+}
+
+.box{
+    padding: 0.5rem;
+    border:1px solid white;
+}
+
+.double_circle{
+    height:40px;
+    width:40px
+}
+.goal_box{
+    position: relative;
+}
+.goal_svg{
+    position: absolute;
+    top:30%;
+    left:28%;
+    fill:var(--goal-color) !important;
+}
+
+
+.star svg{
+    fill:var(--goal-color)
+}
+.title{
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.header .share_menu .share_box_1 ,.header .share_menu .menubox ,
+.header .goal_progress .progress_box ,.star{
+    cursor: pointer;
+    background: none;
+    outline: none;
+    color:white
+}
+.header .goal_progress .progress_box,.star {
+    border:none
+}
+.header a:hover,.star:hover{
+    color:#d1d7dc
+}
+.header button:hover{
+    cursor: pointer !important;
+}
+
+.box:hover{
+    color:white;
+    background-color: rgba(255,255,255,.08);
+}
+.goal:hover{
+    background-color: transparent;
+}
+
+  
+  @media (max-width:1272px){
+    .goal{
+        display: none;
+    }
+    .star{
+        display: none;
+    }
+  
+    .goal_progress{
+        display: none;
+    }
+    .share_menu{
+        display: none;
+    }
+    .header{
+        width:calc(100% - 20rem);
+    }
+  
+  }
+
+  @media (max-width:1000px ){
+    .header{
+        width:calc(100%);
+    }
+}
+

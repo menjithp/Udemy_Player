@@ -1,0 +1,78 @@
+.right_rotate_arrow,.left_rotate_arrow{
+    height:30px;
+    width:30px;
+
+}
+.left_rotate_arrow{
+    rotate: 90deg;;
+    stroke: var(--progress-color);
+    display: block;
+    margin-right:1rem;
+    display: block;
+}
+.right_rotate_arrow{
+    rotate:-90deg;
+    stroke: var(--progress-color);
+    margin-left:1rem;
+    display: block;
+}
+
+.magic1{
+    background: linear-gradient(to right,   #fff  55%, rgba(255,255,255,0)) !important;  /*   #fff    */
+    position: absolute;
+    cursor: pointer;
+    transition: display 0s;
+    transition-delay:2s;
+    
+
+}
+.magic2{
+    background: linear-gradient(to left,  #fff  55%, rgba(255,255,255,0)) !important;
+    position: absolute;
+    cursor: pointer;
+    transition: display 0s;
+    transition-delay:2s;
+
+}
+.magic1{
+    top:0.4rem;
+    left:0;
+}
+.magic2{
+    top: 0.4rem;
+    right:0rem;
+}
+.boiler1{
+    width:40%;
+    position: relative;
+}
+.boiler2{
+    overflow-x:hidden;
+    /* background-color: red; */
+    margin-left:2rem
+}
+
+.boiler3{
+    /* background-color: green; */
+}
+
+
+.boiler1 button{
+    background: none;
+    border:none;
+    font-weight: 700;
+    border-radius: 50%;
+}
+
+.boiler1 .boiler2 .boiler3 h2{
+padding:0 ;
+margin: 0 ;
+}
+
+.boiler3{
+    transition: margin 250ms;
+}
+.boiler3 >div{
+    flex-shrink: 0;
+    /* flex-basis: 2rem; */
+} 
